@@ -24,10 +24,29 @@ Install the project dependencies using npm:
 ```bash
 npm install
 ```
+
+**If errors are encountered while running project, try installing these dependencies:**
+
+```bash
+npm install nativewind
+npm install --save-dev tailwindcss@3.3.2
+npx tailwindcss init
+
+npx expo install expo-av
+
+npx expo install react-native-appwrite
+
+npx expo install expo-document-picker
+
+npx expo install expo-image-picker
+
+npx expo install react-native-animatable
+```
+
 **Running the Project**
 
 ```bash
-npm start
+npx expo start
 ```
 
 **Expo Go**

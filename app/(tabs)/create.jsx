@@ -12,7 +12,6 @@ import FormField from "../../components/FormField";
 import { ResizeMode, Video } from "expo-av";
 import { icons } from "../../constants";
 import CustomButton from "../../components/CustomButton";
-import * as DocumentPicker from "expo-document-picker";
 import * as ImagePicker from "expo-image-picker";
 import { router } from "expo-router";
 import { createVideo } from "../../lib/appwrite";
@@ -30,13 +29,6 @@ const create = () => {
   });
 
   const openPicker = async (selectType) => {
-    // const result = await DocumentPicker.getDocumentAsync({
-    //   type:
-    //     selectType === "image"
-    //        ["image/png", "image/jpeg", "image/jpg"]
-    //       : ["video/mp4", "video/gif"],
-    // });
-
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes:
         selectType === "image"
